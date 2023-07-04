@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usedful Listings</title>
+    <link rel="stylesheet" href="update.css">
+
+</head>
+
+<body>
+    <header>
+        <button id="usage">
+            How to use
+        </button>
+        <a href="../main.html">
+            <img src="../../photos/banner good.png" alt="usedful logo" id="banner">
+        </a>
+        <div id="account">
+            <a href="../../index.html">
+                <button id="logout">
+                    Logout
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <form id="login-form" method="post">
+        <p> Update Listing</p>
+        <div id="container">
+            <div id="input-fields">
+                <div id="name">
+                    <label for text>Manufacturer:</label>
+                    <input type="text" placeholder="Martin Audio">
+                    <label for text>Model:</label>
+                    <input type="text" placeholder="LA12X">
+                    <label for text>Condition:</label>
+                    <input type="text" placeholder="Used/Ex-demo">
+                </div>
+                <div id="supplier-link">
+                    <label for url>Supplier Link:</label>
+                    <input type="url" placeholder="usedful.eu">
+                </div>
+                <div id="description">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+                <div id="availability">
+                    <label for="availability">Availability:</label>
+                    <input type="text" placeholder="Anytime/End of September">
+                </div>
+                <div id="min_order">
+                    <label for="min">Minimum Order:</label>
+                    <select id="min" name="Minimum Order">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                        <option value="30">30</option>
+                        <option value="32">32</option>
+                        <option value="34">34</option>
+                        <option value="36">36</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                        <option value="50">50</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="buy-Price">
+                    <label for="buy_price">Buying Price(Euro):</label>
+                    <input type="text" placeholder="2000" id="buy_price">
+                    <label for="buy_price1">Buying Price(Other currency)</label>
+                    <input type="text" placeholder="1800 GBP" id="buy_price1">
+                </div>
+                <div id="sell-price">
+                    <label for="sell_price">Selling Price(Euro):</label>
+                    <input type="text" placeholder="4000" id="sell_price">
+                </div>
+                <div id="ship">
+                    <label for="shipping">Shipping Dimensions:</label>
+                    <input type="text" placeholder="Shipping Info" id="shipping">
+                    <input type="text" placeholder="W">
+                    <input type="text" placeholder="L">
+                    <input type="text" placeholder="H">
+                    <input type="text" placeholder="KG">
+                </div>
+                <div id="supplier">
+                    <label for="company">Supplier Company:</label>
+                    <input type="text" placeholder="ABC" id="company">
+                    <label for="supplier_name">Supplier name:</label>
+                    <input type="text" placeholder="Patrick" id="supplier_name">
+                    <label for="supplier_email">Supplier Email:</label>
+                    <input type="text" placeholder="Patrick@abc.com" id="supplier_email">
+                </div>
+                <br>
+                <label for="Gebrauchte">Where to List:</label>
+                <div id="list_on">
+
+                    <label for="Gebrauchte">Gebrauchte</label>
+                    <input type="checkbox" id="Gebrauchte">
+                    <label for="GearSource">GearSource</label>
+                    <input type="checkbox" id="GearSource">
+                </div>
+                <div id="newsletter">
+                    <label for="newsletter">Put it in Newsletter:</label>
+                    <input type="checkbox" id="newsletter">
+                </div>
+                <div id="photo">
+                    <label for="image">Select images:</label>
+                    <input type="file" id="image" name="image">
+                </div>
+
+                <input type="submit" value="Submit" id="submit">
+            </div>
+    </form>
+
+</body>
+
+</html>

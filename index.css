@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header button {
+    border-radius: 0.5em;
+    border: none;
+    height: 3em;
+    width: 8em;
+    font-size: 1.1em;
+    color: rgb(230, 58, 143);
+    font-weight: bold;
+}
+
+#banner {
+    width: 20em;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#description img {
+    height: 32em;
+    width: 24em;
+}
+
+#description div {
+    position: relative;
+}
+
+#description div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#description h2 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 14em;
+    text-align: center;
+    z-index: 1;
+}
+
+#description div:hover::before {
+    opacity: 1;
+}
+
+#description div:hover h2 {
+    display: block;
+}
+
+#description div:hover p {
+    color: rgb(230, 58, 143);
+    font-weight: 600;
+}
+
+#description p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(98, 98, 98);
+}
+
+button:hover {
+    background-color: thistle;
+}
+
+a {
+    text-decoration: none;
+}

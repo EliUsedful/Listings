@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usedful Listings</title>
+    <link rel="stylesheet" href="poa.css">
+
+</head>
+
+<body>
+    <header>
+        <button id="usage">
+            How to use
+        </button>
+        <a href="../main.html">
+            <img src="../../photos/banner good.png" alt="usedful logo" id="banner">
+        </a>
+        <div id="account">
+            <a href="../../index.html">
+                <button id="logout">
+                    Logout
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <form id="login-form" method="post">
+        <p>POA Request</p>
+        <div id="container">
+            <div id="input-fields">
+                <div id="listing">
+                    <label for="poa">Unavailable Listing Name:</label>
+                    <input type="text" required placeholder="ABC" id="poa">
+                    <label for="poa-link">Website Link:</label>
+                    <input type="url" required placeholder="https://www.usedful.eu/..." id="poa-link">
+                    <label for="additional">Aditional Info:</label>
+                    <input type="text" required placeholder="Optional" id="additional">
+                </div>
+
+
+                <input type="submit" value="Submit" id="submit">
+            </div>
+    </form>
+
+</body>
+
+</html>
