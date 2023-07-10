@@ -47,7 +47,45 @@ header button {
 #banner {
     width: 20em;
     height: auto;
+    position: relative;
+    margin: 1% 35% 1% 65%;
 }
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(106, 106, 106);
+    font-weight: 600;
+}
+
+header ul li:not(:last-child) {
+    margin-right: 15px;
+    /* Adjust the margin value to create the desired spacing */
+}
+
+a {
+    color: rgb(106, 106, 106);
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(230, 58, 143);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.buttons #logout,
+#settings {
+    margin-left: 1em;
+}
+
+
 
 h1 {
     margin: 0;
@@ -128,10 +166,6 @@ select {
     background-color: thistle;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(230, 58, 143);
-}
 
 button:hover,
 input[type="checkbox"]:hover {

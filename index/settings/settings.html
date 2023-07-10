@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usedful Listings</title>
-    <link rel="stylesheet" href="poa.css">
+    <link rel="stylesheet" href="settings.css">
 
 </head>
 
@@ -34,14 +34,14 @@
                 <li><a href="../dropbox/dropbox.html">Photos</a></li>
             </ul>
             <div id="settings">
-                <a href="../settings/settings.html">
+                <a href="settings.html">
                     <button id="settings">
                         Settings
                     </button>
                 </a>
             </div>
             <div id="account">
-                <a href="../index.html">
+                <a href="../../index.html">
                     <button id="logout">
                         Logout
                     </button>
@@ -49,23 +49,29 @@
             </div>
         </div>
     </header>
-
     <form id="login-form" method="post">
-        <p>POA Request</p>
+        <p>Settings</p>
         <div id="container">
             <div id="input-fields">
-                <div id="listing">
-                    <label for="poa">Unavailable Listing Name:</label>
-                    <input type="text" required placeholder="ABC" id="poa">
-                    <label for="poa-link">Website Link:</label>
-                    <input type="url" required placeholder="https://www.usedful.eu/..." id="poa-link">
-                    <label for="additional">Aditional Info:</label>
-                    <input type="text" required placeholder="Optional" id="additional">
+                <div id="username">
+                    <label for text>Username</label>
+                    <input type="text" value="" required placeholder="1234">
                 </div>
-
-
-                <input type="submit" value="Submit" id="submit">
+                <div id="user">
+                    <label for text>Email</label>
+                    <input type="text" value="" required placeholder="1234@usedful.eu">
+                </div>
+                <div id="pass">
+                    <label for password>Password</label>
+                    <input type="password" value="" required placeholder="abcd">
+                </div>
+                <div id="repass">
+                    <label for password>Repeat Password</label>
+                    <input type="password" value="" required placeholder="abcd">
+                </div>
             </div>
+            <input type="submit" value="Save" id="submit">
+        </div>
     </form>
 
 </body>

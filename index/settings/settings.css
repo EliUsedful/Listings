@@ -2,19 +2,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 body::before {
     content: "";
-    background-image: url("../../photos/background-image1.jpg");
+    background-image: url("../../photos/background-image.jpg");
     background-size: cover;
-    height: 100%;
     background-position: center;
-    opacity: 0.4;
-    position: fixed;
+    opacity: 0.7;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -23,24 +20,19 @@ body::before {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: white;
-    z-index: 999;
 }
 
 header button {
     border-radius: 0.5em;
     border: none;
-    height: 3em;
-    width: 8em;
+    height: 2.5em;
+    width: 7.5em;
     font-size: 1.1em;
     color: rgb(230, 58, 143);
     font-weight: bold;
@@ -51,6 +43,10 @@ header button {
     height: auto;
     position: relative;
     margin: 1% 35% 1% 65%;
+}
+
+button:hover {
+    background-color: thistle;
 }
 
 header ul {
@@ -65,11 +61,6 @@ header ul {
 header ul li:not(:last-child) {
     margin-right: 15px;
     /* Adjust the margin value to create the desired spacing */
-}
-
-a {
-    color: rgb(106, 106, 106);
-    text-decoration: none;
 }
 
 header ul li a:hover {
@@ -87,13 +78,8 @@ header ul li a:hover {
     margin-left: 1em;
 }
 
-
-h1 {
-    margin: 0;
-    padding: 0;
-}
-
 a {
+    color: rgb(106, 106, 106);
     text-decoration: none;
 }
 
@@ -103,43 +89,42 @@ a {
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-    opacity: 0.95;
     width: 40%;
-    padding: 2em;
-    border-radius: 1em;
-    margin: 2em auto;
-    height: 100%;
 }
 
 #login-form p {
     font-size: 2.5em;
     color: rgb(230, 58, 143);
-    margin-bottom: 1em;
-    margin-top: 1.8em;
+}
+
+
+
+#container #user,
+#pass,
+#repass,
+#username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+label {
+    margin-right: 3em;
+    color: grey;
 }
 
 #container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     font-size: 1.5em;
-    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
 }
 
-label {
-    color: grey;
-    margin-bottom: 0.5em;
-}
-
-input[type="text"],
-input[type="url"],
-textarea {
-    width: 100%;
-    padding: 0.5em;
-    font-size: 1em;
-    border-radius: 0.5em;
-    border: 1px solid lightgray;
-    margin-bottom: 1em;
-}
 
 #submit {
     border-radius: 0.5em;
@@ -149,15 +134,19 @@ textarea {
     font-size: 1.1em;
     color: rgb(230, 58, 143);
     font-weight: bold;
+    margin-top: 1em;
     background-color: #E5E4E2;
-    cursor: pointer;
-    margin-bottom: 1em;
-    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 #submit:hover {
     background-color: thistle;
 }
+
+input {
+    font-size: 1em;
+}
+
 
 
 button:hover {

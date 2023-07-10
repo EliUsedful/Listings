@@ -15,8 +15,8 @@ header {
 header button {
     border-radius: 0.5em;
     border: none;
-    height: 3em;
-    width: 8em;
+    height: 2.5em;
+    width: 7.5em;
     font-size: 1.1em;
     color: rgb(230, 58, 143);
     font-weight: bold;
@@ -25,7 +25,8 @@ header button {
 #banner {
     width: 20em;
     height: auto;
-    margin-right: auto;
+    position: relative;
+    margin: 1% 35% 1% 65%;
 }
 
 h1 {
@@ -61,8 +62,6 @@ h1 {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     transition: opacity 0.3s ease;
-
-
 }
 
 #description h2 {
@@ -103,18 +102,36 @@ button:hover {
     background-color: thistle;
 }
 
-a {
-    text-decoration: none;
-}
-
 header ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    color: rgb(106, 106, 106);
+    font-weight: 600;
 }
 
 header ul li:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 15px;
     /* Adjust the margin value to create the desired spacing */
+}
+
+header ul li a:hover {
+    color: rgb(230, 58, 143);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.buttons #logout,
+#settings {
+    margin-left: 1em;
+}
+
+a {
+    color: rgb(106, 106, 106);
+    text-decoration: none;
 }
